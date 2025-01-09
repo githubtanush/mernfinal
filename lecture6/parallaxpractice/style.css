@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    z-index: -1;
+    /* z-index is for overlapping kon si image kiske upar aana vali hai en sab chizo ke liye   */
+}
+
+.background,.foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.background{
+    transform: translateZ(-20px) scale(5);
+}
+.foreground{
+    transform: translateZ(-10px) scale(2);
+}

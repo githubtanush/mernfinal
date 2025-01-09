@@ -1,8 +1,22 @@
-.div{
-    background-color: aqua;
+div{
+    /* background-color: aqua; */
     /* transform: translate(100px,0px); */
     /* transform: rotate(-45deg); */
     /* 1st attribute horizontal scaling and 2nd do vertical scaling  */
-    transform:scale(1,120);
-    
+    /* transform:scale(1,120); */
+        /* 3-D transforms      */
+
+    height : 100px;
+    width : 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+.translated{
+    /* perspective meri aankhon se lekar or z dist ke 0 se mere dekhne ka jo scene hai usko utna translate krdo */
+    transform: perspective(10px) translateZ(-10px);
+}
+.scaled{
+    /* rotation ke case mein perspective ki need  nhi pad rhi hai translation or scale ke case mein pd rhi hai  */
+    margin: 200px;
+    transform : perspective(15px) scaleZ(4) rotateX(15deg) rotateY(30deg);
 }
