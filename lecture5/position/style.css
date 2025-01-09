@@ -1,0 +1,48 @@
+/* static positioning is by default positioning of the element  */
+/* p{
+    position: static; 
+} */
+
+div{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid black; 
+}
+/* box by default static position mein hota ab hm eski relative positioning krenge */
+/* .box{
+    position : relative; */
+    /* farak aise likhne se nhi pdta farak tb pdta hai jab hm eske sath left right top bottom ki property add krenge */
+    /*left : 15px;
+    top: 100px;
+} */
+/* #box3{ */
+    /* position relative to its normal position normally usne jaha jana hota hai uske relative  */
+    /* position: relative;
+    top: 100px;
+    left: 50px;
+} */
+#box1{
+    /* a apni position par fixed ho gya ab vo hilega ya scroll nhi hoga hmm jitna mrji usko upar niche krde chaay  */
+    /* position : fixed; */
+}
+.wrapper{
+    height : 2000px;
+    background-color: yellow;
+    width: 100vw;
+}
+#box3{
+    /* absolute positioning nearest situated ancestor ke hisab se hoti hai  instead of positioning relative to the viewport or fixed absolute postion only done when there is any nearest situated ancestor*/
+    /* when non - static position element is placed then we use absolute positioning  */
+    /* if u don't found non - static position element then positioning with respect to body  */
+    position : absolute;
+    top: 100px;
+    left: 50px;
+}
+
+#box4{
+    /* sticky is toggle between relative and fixed  */
+    position : sticky; 
+    top : 0px;
+}

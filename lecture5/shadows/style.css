@@ -1,0 +1,12 @@
+h1{
+    /* 1st attribute horizontal distance 2nd vertical 3rd blur and last is color  */
+    text-shadow: 3px 3px 3px red; 
+    text-shadow: 3px 3px 3px red, 5px 5px 5px green;
+}
+.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 10px green;
+    box-shadow: 10px 10px 10px green, 50px 50px 50px brown;
+}
