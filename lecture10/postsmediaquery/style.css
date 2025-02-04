@@ -33,3 +33,8 @@
 #content{
     grid-area: main;
 }
+@media(max-width:400px){
+    .container{
+        grid-gap: 100px;
+    }
+}
